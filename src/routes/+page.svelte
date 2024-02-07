@@ -42,8 +42,8 @@
 
   onMount(() => {
     // Write and send sample questions to chatbot
-    // sendInput("Hello", 2000);
-    // sendInput("Suggest me a book?", 6000);
+    sendInput("Hello", 2000);
+    sendInput("Suggest me a book?", 6000);
 
     const resizeObserver = new ResizeObserver((entries) => {
       // entries[0].target.clientHeight is equal to document.body.scrollHeight
