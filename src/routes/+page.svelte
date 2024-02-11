@@ -43,7 +43,10 @@
   onMount(() => {
     // Write and send sample questions to chatbot
     sendInput("Hello", 2000);
-    sendInput("Suggest me a book?", 6000);
+    sendInput(
+      "All I can remember is a plot that a kid is a wizard and goes to a wizard school, do you know which book it is?",
+      6000
+    );
 
     const resizeObserver = new ResizeObserver((entries) => {
       // entries[0].target.clientHeight is equal to document.body.scrollHeight
@@ -79,7 +82,7 @@
     </div>
   </div>
 
-  <div class="mb-2 mt-[12vh]">
+  <div class="mb-2 mt-[10vh]">
     <BottomBar />
   </div>
 </div>
